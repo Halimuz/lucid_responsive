@@ -1,0 +1,569 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p , ul{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+header{
+    background-image: url(../images/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: auto;
+}
+.header_top{
+    padding: 10px 0px;
+}
+.header_logo{
+    color: #fff;
+}
+.main_nav ul li{
+    margin-left: 20px;
+}
+.main_nav ul li a{
+    color: #fff;
+    position: relative;
+    padding: 0 !important;
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.main_nav ul li a:hover{
+    color: #fff;
+}
+.main_nav ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    background-color: #008ed6;
+    width: 0%;
+    height: 2px;
+    transition: .5s all ease-in-out;
+}
+.main_nav ul li a:hover::after{
+    width: 48%;
+}
+.main_nav ul li a::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -7px;
+    background-color: #008ed6;
+    width: 0%;
+    height: 2px;
+    transition: .5s all ease-in-out;
+}
+.main_nav ul li a:hover::before{
+    width: 48%;
+}
+.header_bottom{
+    align-items: center;
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+}
+.header_bottom_img{
+    display: none;
+}
+.header_bottom_text h5{
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 18px 0px;
+    color: #008ed6;
+}
+.header_bottom_text h1{
+    padding-bottom: 20px;
+}
+.header_bottom_text p{
+    padding-bottom: 50px;
+    color: #999;
+    font-size: 16px;
+}
+.download_btn{
+    margin: 0px;
+    display: inline-block;
+}
+.feature_btn{
+    margin: 0px;
+    margin-top: 20px;
+    display: inline-block;
+    margin-left: 20px;
+}
+.btn_download{
+    background-color: #008ed6;
+    border: 1px dotted #0c618b;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px 24px;
+}
+.btn_download:hover{
+    border: 1px dotted #0c618b;
+    background: transparent;
+}
+.btn_vew_feature{
+    border: 1px dotted #0c618b;
+    background: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px 24px;
+}
+.btn_vew_feature:hover{
+    background-color: #008ed6;
+    border: 1px dotted #0c618b;
+}
+.header_bottom_image{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.f_section{
+    padding: 50px 0px;
+    border-bottom: 1px solid #ededed;
+}
+.section_title{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.section_title h5{
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 5px 0px;
+    color: #008ed6;
+    letter-spacing: 1px;
+}
+.section_title h1{
+    font-size: 32px;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+.section_title span{
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin: auto;
+    position: relative;
+}
+.section_title span::after{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #008ed6;
+    transition: .5s all ease-in-out;
+}
+.f_section:hover ::after{
+    width: 48%;
+}
+.section_title span::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    background-color: #008ed6;
+    transition: .5s all ease-in-out;
+}
+.f_section:hover ::before{
+    width: 48%;
+}
+.f_all{
+    text-align: center;
+}
+.f_icon{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #999;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 85px;
+    margin: auto;
+}
+.f_icon i{
+    color: #008ed6;
+    padding: 20px;
+    font-size: 28px;
+}
+.f_all h2{
+    padding: 20px 0px 5px 0px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #1a1a1a;
+}
+.f_all p{
+    color: #999;
+    font-size: 16px;
+    padding: 10px 14px;
+}
+.d_section{
+    padding: 50px 0px;
+}
+.d_section_text{
+    padding-top: 50px;
+}
+.d_section_text h5{
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 5px 0px;
+    color: #008ed6;
+    letter-spacing: 1px;
+}
+.d_section_text h1{
+    font-size: 32px;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+.d_section_text span{
+    display: block;
+    width: 50px;
+    height: 2px;
+    position: relative;
+}
+.d_section_text span::after{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #008ed6;
+    transition: .5s all ease-in-out;
+}
+.d_section:hover ::after{
+    width: 48%;
+}
+.d_section_text span::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    background-color: #008ed6;
+    transition: .5s all ease-in-out;
+}
+.d_section:hover ::before{
+    width: 48%;
+}
+.d_section_text p{
+    color: #999;
+    font-size: 16px;
+    padding: 10px 0px;
+}
+.d_section_list{
+
+}
+.d_section_text ul li{
+    list-style: none;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+}
+.d_section_icon{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.d_section_icon i{
+    color: #008ed6;
+    font-size: 18px;
+}
+.d_section_text ul li a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+.c_section{
+    background-color: #f1f1f1;
+    padding: 50px 0px;
+}
+.c_section_text{
+    padding-top: 50px;
+}
+.c_section_text h5{
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 5px 0px;
+    color: #008ed6;
+    letter-spacing: 1px;
+}
+.c_section_text h1{
+    font-size: 32px;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+.c_section_text span{
+    display: block;
+    width: 50px;
+    height: 2px;
+    position: relative;
+}
+.c_section_text span::after{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #008ed6;
+    transition: .5s all ease-in-out;
+}
+.c_section:hover ::after{
+    width: 48%;
+}
+.c_section_text span::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    background-color: #008ed6;
+    transition: .5s all ease-in-out;
+}
+.c_section:hover ::before{
+    width: 48%;
+}
+.c_section_text p{
+    color: #999;
+    font-size: 16px;
+    padding: 10px 0px;
+}
+.t_sectiona:hover ::after{
+    width: 48%;
+}
+.t_sectiona:hover ::before{
+    width: 48%;
+}
+.t_sectiona{
+    background-image: url(../images/background_02.png);
+    padding: 50px 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.t_main{
+    margin-bottom: 70px;
+}
+.t_main p{
+    font-style: italic;
+    font-size: 18px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+}
+.t_users{
+    display: flex;
+}
+.t_users_text{
+    padding-left: 20px;
+    line-height: 35px;
+}
+.t_users_text h5{
+    font-weight: 500;
+    font-size: 18px;
+}
+.t_users_text p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+}
+.t_bottom_section{
+
+background-color: #15141a;
+}
+.t_bottom_main{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+.t_bottom_text h2 span{
+    font-weight: 300;
+}
+.t_bottom_main .btn_download{
+    background-color: transparent;
+}
+.t_bottom_main .btn_vew_feature{
+    background-color: #008ed6;
+    margin-left: 20px;
+}
+.t_bottom_main .btn_download:hover{
+    background-color: #008ed6;
+}
+.t_bottom_main .btn_vew_feature:hover{
+    background-color: transparent;
+}
+.t_bottom_section .header_bottom_text{
+
+}
+.owl-carousel .owl-dots{
+    position: absolute;
+    left: 50%;
+}
+.owl-carousel .owl-dots .owl-dot span{
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.owl-carousel .owl-dots .active span{
+    background-color: #999;
+}
+.P_section{
+    padding: 50px 0px;
+}
+.P_section:hover ::after{
+    width: 48%;
+}
+.P_section:hover ::before{
+    width: 48%;
+}
+.p_box{
+    text-align: center;
+    border: 1px solid #f1f1f1;
+}
+.p_box h1{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    transition: .4s all ease-in-out;
+}
+.price{
+    padding: 15px 0px;
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+    transition: .4s all ease-in-out;
+}
+.price h2{
+    font-size: 60px;
+}
+.price h2 sup{
+    font-size: 35px;
+}
+.price p{
+    padding: 5px 0px !important;
+}
+.p_box P{
+    padding: 40px 20px;
+    font-size: 18px;
+}
+.p_box .btn_download{
+    margin-bottom: 28px;
+    background-color: transparent;
+    color: #008ed6;
+    font-weight: 700;
+    margin-left: 0px;
+    transition: .4s all ease-in-out;
+}
+.p_box:hover h1{
+    color: #008ed6;
+}
+.p_box:hover .price{
+    background-color: #008ed6;
+    color: #fff;
+}
+.p_box:hover .btn_download{
+    background-color: #008ed6;
+    color: #fff;
+}
+.c_us_section{
+    background-color: #ededed;
+    padding: 50px 0px;
+    position: relative;
+    height: 750px;
+}
+.c_us_section:hover ::after{
+    width: 48%;
+}
+.c_us_section:hover ::before{
+    width: 48%;
+}
+.c_us_box{
+    text-align: center;
+}
+.c_us_box i{
+    color: #008ed6;
+    font-size: 30px;
+    padding: 20px;
+}
+.c_us_box p{
+    color: #999;
+}
+.message_box{
+    background-color: #15141a;
+    padding: 50px 100px;
+    position: absolute;
+    left: 8%;
+    top: 60%;
+}
+.message_box input{
+    width: 100%;
+    background: transparent;
+    border: 1px solid #444348;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+.message_box textarea{
+    background: transparent;
+    border: 1px solid #444348;
+    padding: 19px;
+    width: 100%;
+}
+.send_message{
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+.send_message .btn_download{
+    font-weight: 700;
+}
+.send_message .btn_download:hover{
+    color: #008ed6;
+}
+footer{
+    background-color: #15141a;
+    padding: 30px 0px;
+}
+.footer_icon{
+   color: #444348;
+}
+.footer_icon ul{
+    display: flex;
+    justify-content: center;
+}
+.footer_icon ul li{
+    list-style: none;
+}
+.footer_icon ul li i{
+    padding: 0px 20px;
+}
+.copyright{
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+.copyright h5{
+    color: #444348;
+    font-size: 16px;
+}
+.footer_icon ul li i:hover{
+    color: #008ed6;
+}
